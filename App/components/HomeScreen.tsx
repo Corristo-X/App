@@ -18,6 +18,12 @@ const HomeScreen = ({ navigation, route } : {navigation:any,route:any}) => {
         navigation.navigate('Gesture', { description: 'Gesture' })
       }
     />
+     <Button
+      title="Pan Gesture Hanlder"
+      onPress={() =>
+        navigation.navigate('GestureHandler', { description: 'GestureHandler' })
+      }
+    />
     </View>
    
   );
