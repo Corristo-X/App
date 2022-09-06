@@ -7,6 +7,7 @@ import Movie from './Film';
 import Movie2 from './SecondFilm';
 import Gesture from './Gesture';
 import GestureHandler from './PanGestureHandler';
+import API from './API';
 const Stack = createNativeStackNavigator();
 
 const MyStack = () => {
@@ -40,6 +41,7 @@ const MyStack = () => {
         <Stack.Screen name="Movie2" component={Movie2}/>
         <Stack.Screen name="Gesture" component={Gesture}/>
         <Stack.Screen name="GestureHandler" component={GestureHandler}/>
+        <Stack.Screen name ="API" component={API}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

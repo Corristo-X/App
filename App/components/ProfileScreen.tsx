@@ -36,6 +36,18 @@ const ProfileScreen = ({ navigation,route } : {navigation:any,route:any}) => {
       }
       
     />
+     <Button
+      title="API"
+      onPress={() =>
+        navigation.navigate('API', { movieparams: {
+            title:"API",
+            release:"2022",
+            description:"Get and show API"
+            
+        } })
+      }
+      
+    />
     </View>
   );
 };
